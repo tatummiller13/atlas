@@ -1,0 +1,66 @@
+/* Fun Google Fonts */
+body {
+  font-family: 'Chewy', cursive;
+  background-color: #fffef0;
+  color: #333;
+  margin: 0;
+  padding: 1em;
+}
+
+h1, h2, h3 {
+  font-family: 'Cherry Bomb One', cursive;
+  color: #a52a2a;
+  margin: 0.5em 0;
+}
+
+p, ul, ol, dl {
+  margin-bottom: 1em;
+}
+
+strong {
+  color: #e91e63;
+}
+
+em {
+  color: #555;
+}
+
+ul, ol {
+  border: 2px dotted #4CAF50;
+  border-radius: 6px;
+  padding: 10px 20px;
+  background-color: #f4fff4;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  margin-top: 40px;
+  background-color: #f8d8f8;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 900px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  ul, ol {
+    font-size: 1rem;
+  }
+}
