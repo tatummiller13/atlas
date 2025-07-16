@@ -11,17 +11,17 @@
   <form action="" method="post" id="proposal2020">
 
     <h1>2020 Proposal Form</h1>
-    <p><em>* indicates a required field</em></p>
+    <p class="instructions"><em>* indicates a required field</em></p>
 
     <fieldset>
       <legend>Speaker Info</legend>
       <ul>
         <li>
-          <label for="fstspkr1">First Name:<span>*</span></label>
+          <label for="fstspkr1">First Name: <span>*</span></label>
           <input id="fstspkr1" name="fstspkr1" type="text" class="reqfield" required />
         </li>
         <li>
-          <label for="lstname1">Last Name:<span>*</span></label>
+          <label for="lstname1">Last Name: <span>*</span></label>
           <input id="lstname1" name="lstname1" type="text" class="reqfield" required />
         </li>
         <li>
@@ -37,27 +37,22 @@
           <input id="department1" name="department1" type="text" />
         </li>
         <li>
-          <label for="address1">Address:<span>*</span></label>
+          <label for="address1">Address: <span>*</span></label>
           <input id="address1" name="address1" type="text" class="reqfield" required />
         </li>
       </ul>
     </fieldset>
 
-    <div id="multchoice">
-      <fieldset>
-        <legend>Type of Presentation</legend>
-        <p>
-          <span>
-            <input value="1" id="TypeofPres_lec" name="p-type" type="radio" />
-            <label for="TypeofPres_lec">Lecture</label>
-          </span>
-          <span>
-            <input value="2" id="TypeofPres_lab" name="p-type" type="radio" />
-            <label for="TypeofPres_lab">Computer Lab</label>
-          </span>
-        </p>
-      </fieldset>
-    </div>
+    <fieldset>
+      <legend>Type of Presentation</legend>
+      <div class="radio-group">
+        <input value="1" id="TypeofPres_lec" name="p-type" type="radio" />
+        <label for="TypeofPres_lec">Lecture</label>
+
+        <input value="2" id="TypeofPres_lab" name="p-type" type="radio" />
+        <label for="TypeofPres_lab">Computer Lab</label>
+      </div>
+    </fieldset>
 
     <p class="submit-button">
       <input type="submit" value="Submit your proposal" />
