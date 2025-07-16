@@ -25,9 +25,11 @@ label {
 }
 
 input.reqfield {
-  background: #FF9;
+  background: #fff8c4; /* soft yellow for required fields */
+  border: 1px solid #e0b800;
 }
 
+/* Highlighting keyboard or mouse focus */
 select:focus, select:active,
 input:focus, input:active,
 input:focus + label, input:active + label,
