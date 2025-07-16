@@ -1,15 +1,10 @@
 @charset "UTF-8";
 
-/* form styling */
+/* General layout */
 
 #wrapper {
   width: 60%;
   margin-left: 4%;
-}
-
-div#formcol1 {
-  float: left;
-  width: 100%;
 }
 
 label {
@@ -19,23 +14,40 @@ label {
   text-align: right;
 }
 
-#formcol1 li {
+#formcol1 li,
+ul li {
   list-style: none;
   margin-bottom: 0.5em;
 }
 
+/* Instructions text at the top */
+.instructions {
+  font-size: 0.95em;
+  color: #444;
+  margin-bottom: 1em;
+}
+
+/* Highlight required fields */
 input.reqfield {
-  background: #fff8c4; /* soft yellow for required fields */
+  background: #fff8c4; /* light yellow */
   border: 1px solid #e0b800;
 }
 
-/* Highlighting keyboard or mouse focus */
-select:focus, select:active,
-input:focus, input:active,
-input:focus + label, input:active + label,
-label[for]:focus, label[for]:active {
-  color: #FFF !important;
-  background-color: #BB3D2F !important;
+/* Focus styles for accessibility */
+input:focus, select:focus {
+  outline: 2px solid #BB3D2F;
+  background-color: #ffe;
 }
 
-/* end of form css */
+/* Radio buttons grouped */
+.radio-group {
+  display: flex;
+  gap: 1em;
+  margin-top: 0.5em;
+}
+
+.radio-group input[type="radio"] {
+  margin-right: 0.3em;
+}
+
+/* end */
